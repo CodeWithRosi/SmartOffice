@@ -1,0 +1,303 @@
+/**********PALLETE********
+main color: #81417D
+- Tints:
+#81417de7
+#81417d4e
+
+gray: black;*/
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: black;
+    line-height: 1;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+
+}
+
+section,
+footer {
+    padding: 96px 0px;
+}
+
+.step-box {}
+
+.image-box {
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-box::after {
+    display: block;
+    content: "";
+    background-color: #81417d4e;
+
+    border-radius: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    padding-bottom: 50%;
+}
+
+.image-box::before {
+    display: block;
+    content: "";
+    background-color: #81417D;
+    border-radius: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    padding-bottom: 40%;
+    z-index: 1;
+}
+
+.step-img {
+
+    width: 30%;
+    z-index: 2;
+
+}
+
+.grid {
+    display: grid;
+
+
+    column-gap: 6.4rem;
+    row-gap: 9.6rem;
+}
+
+.grid--2colls {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid--3colls {
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+
+}
+
+.grid--4colls {
+
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+
+
+}
+
+/******TESTIMONIALS********/
+.testimonial {
+    background-color: yellow;
+
+}
+
+/******PRODUCTS ************/
+.product-img {
+    width: 100%;
+    border-radius: 11px 11px 0px 0px;
+}
+
+.tag {
+
+    width: 200px;
+    height: 20px;
+    border-radius: 2px;
+    margin: 2px;
+    padding: 2px;
+
+}
+
+.tag--green {
+    background-color: green;
+}
+
+.tag--pink {
+    background-color: pink;
+}
+
+.product {
+
+    background-color: white;
+    border-radius: 11px;
+}
+
+.product-attributes {
+    list-style: none;
+}
+
+.attribute-icon {
+    stroke: #81417D;
+    width: 16px;
+
+}
+
+.product-details {
+    padding: 1.8rem;
+}
+
+
+.product-attributes {
+    list-style: none;
+
+}
+
+.product-attribute {
+    font-size: 1.8rem;
+
+}
+
+
+/*******HOW TO SECTION********/
+.step-title {
+    font-size: 62px;
+    font-weight: 500;
+    color: #81417d4e;
+    line-height: 1.8;
+}
+
+.step-description {
+    font-size: 24px;
+    line-height: 1.8;
+}
+
+.step-heading {
+    font-size: 48px;
+    line-height: 1.8;
+}
+
+.subheading {
+    color: #81417D;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+header {
+    background-color: white;
+}
+
+#products {
+    background-color: #81417d4e;
+}
+
+#testimonials {
+    background-color: white;
+}
+
+#contactus {
+    background-color: #81417d4e;
+    border-radius: 11px;
+
+}
+
+/*********CTA FORM***********/
+.cta-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+}
+
+
+.cta-form input,
+.cta-form select {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    background-color: #81417d4e;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form button {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    border-radius: 9px;
+    background-color: #81417D;
+    color: white;
+
+}
+
+.cta-form label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+
+.cta {
+    display: flex;
+    gap: 48px;
+}
+
+.cta-img {
+    background-image: linear-gradient(to right bottom,
+            #DFB3CE,
+            transparent),
+        url("../images/step3.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+}
+
+/**********FOOOTER***********/
+.col-heading {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: black;
+
+    margin-bottom: 1.8rem;
+    letter-spacing: 0.75px;
+}
+
+
+.footer-list {
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+.footer-list li {
+    margin-bottom: 1.8rem;
+}
+
+.footer-list a:link,
+.footer-list a:hover,
+.footer-list a:visited,
+.footer-list a:active {
+    color: black;
+    text-decoration: none;
+}
+
+.img-logo {
+    width: 50%;
+    margin-left: -20px;
+    ;
+}
