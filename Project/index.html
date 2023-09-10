@@ -11,20 +11,44 @@
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:ital,wght@0,400;0,500;1,400&family=Source+Serif+4:opsz@8..60&display=swap"
             rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/queries.css" rel="stylesheet" />
     </head>
 
     <body>
         <header>
-            <navigation>
+            <nav class="mainnav">
+
                 <a href="#hero">How to</a>
                 <a href="#products">Products</a>
                 <a href="#testimonials">Testimonials</a>
-                <a href="#contactus">Contact us</a>
-            </navigation>
+                <a href="#contactus" class="cta">Contact us</a>
+            </nav>
         </header>
         <main>
             <section id="hero">
+                <div class="container hero">
+                    <div>
+                        <h1>
+                            We are smart office interior studio.
+                        </h1>
+                        <p class="hero-description">
+                            We are team of super designers and great tech maniacs.
+                        </p>
+                        <a href="#cta" class="btn btn--full">Ask for offer</a>
+                        <div class="delivered-products">
+                            <!-- <div class="delivered-imgs">
+                                <img src="img/customers/customer-1.jpg" alt="Customer photo" />
+                                <img src="img/customers/customer-2.jpg" alt="Customer photo" />
+                                <img src="img/customers/customer-3.jpg" alt="Customer photo" />
+                            </div>-->
+                            <p class="delivered-text">
+                                <span>50,000+</span> happy customers!
+                            </p>
+                        </div>
+                    </div>
+                    <img src="images/hero.jpg" class="hero-img">
 
+                </div>
             </section>
             <section id="howto">
                 <div class="container">
@@ -165,10 +189,40 @@
                     <span class="subheading">What our customers says</span>
                     <h2>Testimonials</h2>
                     <div class="grid grid--2colls">
-                        <div class="testimonial">test1</div>
-                        <div class="testimonial">test2</div>
-                        <div class="testimonial">test3</div>
-                        <div class="testimonial">test4</div>
+                        <figure class="testimonial">
+                            <img class="testimonial-img" alt="Photo of customer Dave Bryson"
+                                src="img/customers/dave.jpg" />
+                            <blockquote class="testimonial-text">
+                                I am in love with my new office! It feels truly magical.
+                            </blockquote>
+                            <p class="testimonial-name">&mdash; Dave Bryson</p>
+                        </figure>
+
+                        <figure class="testimonial">
+                            <img class="testimonial-img" alt="Photo of customer Ben Hadley"
+                                src="img/customers/ben.jpg" />
+                            <blockquote class="testimonial-text">
+                                The nevironement is really chainged now! My team is happy and inspired!
+                            </blockquote>
+                            <p class="testimonial-name">&mdash; Ben Hadley</p>
+                        </figure>
+
+                        <figure class="testimonial">
+                            <img class="testimonial-img" alt="Photo of customer Steve Miller"
+                                src="img/customers/steve.jpg" />
+                            <blockquote class="testimonial-text">
+                                I just started a new company and this saved me a lot of time!
+                            </blockquote>
+                            <p class="testimonial-name">&mdash; Steve Miller</p>
+                        </figure>
+                        <figure class="testimonial">
+                            <img class="testimonial-img" alt="Photo of customer Steve Miller"
+                                src="img/customers/steve.jpg" />
+                            <blockquote class="testimonial-text">
+                                I just started a new company and this saved me a lot of time!
+                            </blockquote>
+                            <p class="testimonial-name">&mdash; Steve Miller</p>
+                        </figure>
                     </div>
                 </div>
             </section>
