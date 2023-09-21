@@ -12,6 +12,8 @@
             rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/queries.css" rel="stylesheet" />
+
+        <script src="js/scripts.js" type="text/javascript" defer></script>
     </head>
 
     <body>
@@ -231,7 +233,7 @@
                     <span class="subheading">Do you have questions?</span>
                     <h2>Write to us!</h2>
                     <div class="cta">
-                        <form action="" method="get" class="cta-form">
+                        <form method="get" class="cta-form">
                             <div>
                                 <label for="fullName">Full Name</label>
                                 <input id="fullName" type="text" placeholder="Maria Ivanova">
@@ -249,7 +251,14 @@
                                     <option value="Other">Other</option>
                                 </select>
                             </div>
-                            <button>Submit </button>
+                            <script>
+                                function SendMail() {
+                                    var fullname = document.getElementById("fullName").value;
+                                    var email = document.getElementById("email").value;
+                                    document.location.href = "mailto:" + email + "?subject=myemailsubject" + "&body=" + fullname;
+                                }
+                            </script>
+                            <button onclick="SendMail()">Submit </button>
                         </form>
                         <div class="cta-img"></div>
                     </div>
